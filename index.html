@@ -2,7 +2,7 @@
 <!-- NOTE: the string 'TODO' appears everywhere you need to fill in information. -->
 <html>
 <head>
-<title>TODO:Title For Your Game</title>
+<title>Keep Your Shadow</title>
 <!-- NOTE: this CSS sets up the ".figure" class to center images, and instructs images in ".figure"s to have space around them and to render crisp pixel edges when scaled [e.g. for retina displays]. -->
 <style>
 body {
@@ -15,6 +15,7 @@ body {
 	text-align:center;
 }
 .figure > img {
+	width: 25%;
 	margin: 0px 20px;
 	image-rendering: pixelated;
 }
@@ -50,22 +51,26 @@ p {
 </style>
 </head>
 <body>
-<h1>TODO: Title For Your Game</h1>
-<div id="author">by: TODO Your Name (TODO your andrewid)</div>
-<p>TODO: one-sentence summary of your game, highlighting the unique "hook" of the game.</p>
+<h1>Keep Your Shadow</h1>
+<div id="author">by: I-Chen Jwo (ijwo)</div>
+<p>Your shadow tries to run away from you, try to keep it from contacting other object's shadow.</p>
 <!-- the <div> wrapping this image centers it on the page. -->
 <!-- TODO: drawing showing the main view of the game during play -->
 <div class="figure">
 <img src="game.png" />
 </div>
-<p>TODO: more information (2-3 sentences) about gameplay, referring to the image above.</p>
+<p>The player is moving around on a circle planer surface and there are objects on the planar as well.
+Try to keep the player's shadow away from touching other objects and also try not to touch the
+objects' shadow. For example, if the sun goes down a little bit furthur, the playr's shadow might touch
+obj1 and the shadow of obj2 might touch the player. That will let your shadow run away!</p>
 
 <h2>Gameplay</h2>
-<p>TODO: Describe how the game starts, plays (e.g. what are the controls), and ends.</p>
+<p>The sun will move around either orderly or randomly, that's up the the choice of implementer.
+Could use WASD key to move around the view point and the arrow keys to control the player.</p>
 <!-- TODO: illustrate your descriptions with more drawings -->
 <div class="figure">
-<img src="before-reset.png" />
-<img src="after-reset.png" />
+<img src="sun.png" />
+<!-- <img src="after-reset.png" /> -->
 </div>
 
 <h2>Assets</h2>
